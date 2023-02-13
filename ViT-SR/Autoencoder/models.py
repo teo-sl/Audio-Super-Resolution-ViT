@@ -1,19 +1,8 @@
 import torch
 import torch.nn as nn
-from transformers import ViTConfig, ViTModel, AdamW
+from transformers import ViTConfig, ViTModel
 
-import os
 import math
-import glob
-import pickle
-
-
-import librosa
-from scipy import signal
-
-import matplotlib.pyplot as plt
-import numpy as np
-
 
 class ResidualBlock(nn.Module):
 
@@ -67,7 +56,7 @@ class GenerativeNetwork(nn.Module):
         x = x.permute(0,1,3,2,4,5)
         new_h = x.shape[1] * x.shape[2]
         new_w = x.shape[3] * x.shape[4]
-        x = x.reshape(B, new_h, new_w, 1) #ultima posizione = num_channels che è sempre 1
+        x = x.reshape(B, new_h, new_w, 1) 
         x = x.swapaxes(3, 1)
         x = x.swapaxes(3, 2)
         return x
