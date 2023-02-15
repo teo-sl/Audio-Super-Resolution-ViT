@@ -1,6 +1,5 @@
-ViT-SR/Autoencoder/checkpoints/generator*
-ViT-SR/Autoencoder/data/119.mus
-ViT-SR/Autoencoder/data/100-2.mus
-.DS_Store
-ViT-SR/Autoencoder/.DS_Store
-ViT-SR/.DS_Store
+ViT-SR/Autoencoder/checkpoints/generator_15-02-2023_07-46-23_.pt
+ViT-SR/Autoencoder/checkpoints/generator_15-02-2023_13-46-21.pt
+ViT-SR/Autoencoder/data/119_.mus
+ViT-SR/Autoencoder/data/100-2_.mus
+
